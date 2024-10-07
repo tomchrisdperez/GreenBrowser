@@ -1,0 +1,8 @@
+<script language="JavaScript">
+	var i = parseInt(document.body.style.zoom);
+	if (isNaN(i)) i=100;
+	if (i<0) i=0;
+	if (i==19) i=18;
+	newZoom = i+10+'%';
+	document.body.style.zoom=newZoom;
+</script>

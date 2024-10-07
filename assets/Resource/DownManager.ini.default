@@ -1,0 +1,36 @@
+[DownManager]
+MonitorFileType=.ZIP;.RAR;.EXE;.CAB;.GZ;.Z;.TAR;.ARJ;.LZH;.AVI;.RM;.RAM;.ASF;.WMV;.MPG;.MPEG;.RMVB;.MP3
+N1=FlashGet
+S1=<script language="vbscript">\nset JetCarCatch=CreateObject("JetCar.Netscape")\ncall JetCarCatch.AddUrl("%download_url","%download_info",document.Url)\n</script>
+N2=NetAnts
+S2=<script language="VBScript">\nOn Error Resume Next\nset NetAntsApi=CreateObject("NetAnts.API")\nif err<>0 then\nMsgBox("NetAnts not properly installed on this PC!")\nelse\nif NetAntsApi.IsUrlExist("%download_url") then\nMsgBox("%download_url"+vbCrLf+"already in queue")\nelse\ncall NetAntsApi.AddUrl("%download_url", "%download_info", document.Url)\nend if\nend if\n</script>
+N3=Net Transport
+S3=<script language="vbscript">\nset NTIECatcher=CreateObject("NTIEHelper.NTIEAddUrl")\ncall NTIECatcher.AddLink(document.Url, "%download_url", "%download_info")\n</script>
+N4=Download Express
+S4=<script language="JavaScript">\nvar DP = new ActiveXObject("Mdpph.API.1");\nif(DP)DP.DownloadFile("%download_url", document.Url, "");\nelse \nalert("download express is not installed yet"); \n</script> 
+N5=HiDownload
+S5=<script language="VBScript">\nset NetMolesApi=CreateObject("NetMoles.NetMoles")\nif err<>0 then\nMsgBox("NetMoles not properly installed on this PC!")\nelse\nNetMolesApi.NMAddUrl "%download_url", document.Url\nend if\n</script>
+N6=DLExpert
+S6=<script language="VBScript">\nset dlexpertapi= CreateObject("dlexpertapi")\ncall dlexpertapi.addjob("%download_url",document.Url)\n</script>
+N7=GetRight
+S7=<script language="JavaScript1.2">window.clipboardData.setData("Text", "%download_url");</script>
+N8=Fresh Download
+S8=<script language="JavaScript1.2">\nvar FD = new ActiveXObject("fdcatch.fdnscatcher");if(FD) FD.AddUrl("%download_url", document.Url, 0); else alert("FDCatch.dll is not registered or corrupted. Please re-install Fresh Download");</script>
+N9=DAP
+S9=<script language="JavaScript1.2">\nvar DAPExt = new ActiveXObject("dapie.catcher");if(DAPExt) DAPExt.MenuUrl("%download_url", document.Url, ""); else alert("DAPIE.DLL is not registered or corrupted. Please re-install Download Accelerator Plus");</script>
+N10=LeechGet
+S10=<script language="JavaScript1.2">\nvar LeechGet = new ActiveXObject("LeechGetIE.AddURL");\nif(LeechGet)LeechGet.AddUrl("%download_url");\nelse alert("LeechIE.dll is not registered. Please run `regsvr32.exe LeechIE.dll'");</script>
+N11=LeechGet 2004
+S11=<script language="JavaScript1.2">\nvar LeechGet = new ActiveXObject("LeechGetIE.LeechIE");\nif(LeechGet)LeechGet.AddUrl("%download_url");\nelse alert("LeechIE.dll is not registered. Please run `regsvr32.exe LeechIE.dll'");</script>
+N12=Download Master
+S12=<script  language="JavaScript">\nvar DMCOMObj = new ActiveXObject("dmie.moveurl");\nif(DMCOMObj)\nDMCOMObj.AddURL("%download_url", document.Url);\nelse\nalert("ActiveX automation object placed in DMIE.DLL is not registered or corrupted. Please try reinstall Download Master");</script>
+N13=Star Downloader
+S13=<script language="javascript">\nvar SDIE = new ActiveXObject("sdext.stardownext");\nif(SDIE)SDIE.DownloadURL("%download_url", document.Url);\nelse \nalert("sdext.dll could not be found. Please re-install Star Downloader"); \n</script> 
+N14=Mass Downloader
+S14=<script language="JavaScript1.2">\nvar MassDown = new ActiveXObject("MassDown.AddUrl.1");\nif(MassDown)\nMassDown.AddUrlWithReferer("%download_url", "%download_info", document.Url);\nelse\nalert("MassDown.dll is not registered. Please run `regsvr32.exe MassDown.dll`");\n</script>
+N15=Intertnet Download Accelerator
+S15=<script language="JavaScript">\nvar IDACOMObj = new ActiveXObject("idaie.moveurlida");\nif(IDACOMObj)\n{IDACOMObj.AddURL("%download_url", document.Url);}\nelse{alert("ActiveX automation object placed in IDAIE.DLL is not registered or corrupted. Please try reinstall Internet Download Accelerator");}\n</script>
+N16=Free Download Manager
+S16=<script language="VBScript">\nOn Error Resume Next\nset obj = CreateObject ("WG.WGUrlReceiver" )\nif err<>0 then\nAlert("Free Download Manager not properly installed!")\nelse\nobj.Comment = "%download_info"\nobj.Url = "%download_url"\nobj.Referer = document.Url\nobj.ShowAddDownloadDialog\nend if\n</script>
+N17=Ñ¸À×5
+S17=<script language="vbscript">\n On Error Resume Next\n set ThunderAgent = CreateObject("ThunderAgent.Agent.1")\n if err<>0 then\n MsgBox("fail")\n else\n ThunderAgent.AddTask("%download_url")\n ThunderAgent.CommitTasks()\n set ThunderAgent = nothing\n end if\n </script>

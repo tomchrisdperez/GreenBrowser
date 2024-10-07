@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{A652FA2C-3162-46EB-8ABF-3AA6C95CCCE3}</ProjectGuid>
+    <RootNamespace>GreenBrowser</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.35312.102</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/GreenBrowser.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../Include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/GreenBrowser.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <BrowseInformationFile>.\Debug/</BrowseInformationFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Wsock32.lib;pdh.lib;Delayimp.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/GreenBrowser.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DelayLoadDLLs>pdh.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\Debug/GreenBrowser.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/GreenBrowser.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/GreenBrowser.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../Include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/GreenBrowser.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation />
+      <BrowseInformationFile>.\Release/</BrowseInformationFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Wsock32.lib;pdh.lib;Delayimp.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/GreenBrowser.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DelayLoadDLLs>pdh.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <ProgramDatabaseFile>.\Release/GreenBrowser.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/GreenBrowser.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddPopupDlg.cpp" />
+    <ClCompile Include="AddressBarEx.cpp" />
+    <ClCompile Include="AddToThisFavDlg.cpp" />
+    <ClCompile Include="AdvTabCtrl.cpp" />
+    <ClCompile Include="AnimateIcon.cpp" />
+    <ClCompile Include="BaseExpObj.cpp" />
+    <ClCompile Include="BaseTabCtrl.cpp" />
+    <ClCompile Include="ChevBar.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CleanAll.cpp" />
+    <ClCompile Include="CollectorDlg.cpp" />
+    <ClCompile Include="ComboBar.cpp" />
+    <ClCompile Include="Crypt.cpp" />
+    <ClCompile Include="CustomizeToolbar.cpp" />
+    <ClCompile Include="Custsite.cpp" />
+    <ClCompile Include="EnTabCtrl.cpp" />
+    <ClCompile Include="ExpMenu.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ExternalUtilItem.cpp" />
+    <ClCompile Include="ExternalUtils.cpp" />
+    <ClCompile Include="FavTree.cpp" />
+    <ClCompile Include="FavTreeCtrl.cpp" />
+    <ClCompile Include="FavWnd.cpp" />
+    <ClCompile Include="FixedHtmlView.cpp" />
+    <ClCompile Include="Function.cpp" />
+    <ClCompile Include="GreenBrowser.cpp" />
+    <ClCompile Include="GreenBrowserHelper.cpp" />
+    <ClCompile Include="GreenBrowserNSHandle.cpp" />
+    <ClCompile Include="GreenBrowserOptions.cpp" />
+    <ClCompile Include="GreenBrowserView.cpp" />
+    <ClCompile Include="GroupSelectDlg.cpp" />
+    <ClCompile Include="GroupUrlDlg.cpp" />
+    <ClCompile Include="HistoryTree.cpp" />
+    <ClCompile Include="HisTreeCtrl.cpp" />
+    <ClCompile Include="HtmlWnd.cpp" />
+    <ClCompile Include="Idispimp.cpp" />
+    <ClCompile Include="InputAlias.cpp" />
+    <ClCompile Include="InputDlg.cpp" />
+    <ClCompile Include="InputPassword.cpp" />
+    <ClCompile Include="LinkListDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuData.cpp" />
+    <ClCompile Include="Menuorder.cpp" />
+    <ClCompile Include="MFNetTraffic.cpp" />
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="OrgGroupDlg.cpp" />
+    <ClCompile Include="Perfmon.cpp" />
+    <ClCompile Include="PopupConfirm.cpp" />
+    <ClCompile Include="PopupDlg.cpp" />
+    <ClCompile Include="ProxyInfo.cpp" />
+    <ClCompile Include="ProxyList.cpp" />
+    <ClCompile Include="QuickSearchDlg.cpp" />
+    <ClCompile Include="RASSPDM.CPP" />
+    <ClCompile Include="Resourcebar.cpp" />
+    <ClCompile Include="SAPrefsDialog.cpp" />
+    <ClCompile Include="SAPrefsSubDlg.cpp" />
+    <ClCompile Include="Scbarcf.cpp" />
+    <ClCompile Include="Scbarg.cpp" />
+    <ClCompile Include="SelectLang.cpp" />
+    <ClCompile Include="SelectURL.cpp" />
+    <ClCompile Include="SelProxyCatDlg.cpp" />
+    <ClCompile Include="SetAliasDlg.cpp" />
+    <ClCompile Include="SetFormDataDlg.cpp" />
+    <ClCompile Include="SetProxy.cpp" />
+    <ClCompile Include="SetRefIntervalDlg.cpp" />
+    <ClCompile Include="SetSCDlg.cpp" />
+    <ClCompile Include="ShellPidl.cpp" />
+    <ClCompile Include="ShellTree.cpp" />
+    <ClCompile Include="ShellTreeCtrl.cpp" />
+    <ClCompile Include="ShellWnd.cpp" />
+    <ClCompile Include="SimpleSAH.cpp" />
+    <ClCompile Include="SizecBar.cpp" />
+    <ClCompile Include="SortListCtrl.cpp" />
+    <ClCompile Include="SortSaveDlg.cpp" />
+    <ClCompile Include="StatusBarWithProgress.Cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabDropTarget.cpp" />
+    <ClCompile Include="TextProgressCtrl.cpp" />
+    <ClCompile Include="ToolMenu.cpp" />
+    <ClCompile Include="UrlFilterProp.cpp" />
+    <ClCompile Include="WebBrowser2.cpp" />
+    <ClCompile Include="WebFileOpenDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="GreenBrowser.idl">
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Win32</TargetEnvironment>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GreenBrowser_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GreenBrowser_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Win32</TargetEnvironment>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateStublessProxies>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GreenBrowser_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GreenBrowser_i.c</InterfaceIdentifierFileName>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GreenBrowser.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddPopupDlg.h" />
+    <ClInclude Include="AddressBarEx.h" />
+    <ClInclude Include="AddToThisFavDlg.h" />
+    <ClInclude Include="AdvTabCtrl.h" />
+    <ClInclude Include="AnimateIcon.h" />
+    <ClInclude Include="BaseExpObj.h" />
+    <ClInclude Include="ChevBar.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CleanAll.h" />
+    <ClInclude Include="CollectorDlg.h" />
+    <ClInclude Include="Crypt.h" />
+    <ClInclude Include="CustomizeToolbar.h" />
+    <ClInclude Include="Custsite.h" />
+    <ClInclude Include="ExternalUtilItem.h" />
+    <ClInclude Include="ExternalUtils.h" />
+    <ClInclude Include="FavTree.h" />
+    <ClInclude Include="FavTreeCtrl.h" />
+    <ClInclude Include="FavWnd.h" />
+    <ClInclude Include="FixedHtmlView.h" />
+    <ClInclude Include="Function.h" />
+    <ClInclude Include="GreenBrowser.h" />
+    <ClInclude Include="GreenBrowserHelper.h" />
+    <ClInclude Include="GreenBrowserNSHandle.h" />
+    <ClInclude Include="GreenBrowserOptions.h" />
+    <ClInclude Include="GreenBrowserView.h" />
+    <ClInclude Include="GroupSelectDlg.h" />
+    <ClInclude Include="GroupUrlDlg.h" />
+    <ClInclude Include="HistoryTree.h" />
+    <ClInclude Include="HisTreeCtrl.h" />
+    <ClInclude Include="HtmlWnd.h" />
+    <ClInclude Include="idispimp.h" />
+    <ClInclude Include="InputAlias.h" />
+    <ClInclude Include="InputDlg.h" />
+    <ClInclude Include="InputPassword.h" />
+    <ClInclude Include="LinkListDlg.h" />
+    <ClInclude Include="macro.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MenuBar.h" />
+    <ClInclude Include="MenuData.h" />
+    <ClInclude Include="Menuorder.h" />
+    <ClInclude Include="MFNetTraffic.h" />
+    <ClInclude Include="Monitor.h" />
+    <ClInclude Include="OrgGroupDlg.h" />
+    <ClInclude Include="Perfmon.h" />
+    <ClInclude Include="PopupConfirm.h" />
+    <ClInclude Include="PopupDlg.h" />
+    <ClInclude Include="ProxyInfo.h" />
+    <ClInclude Include="ProxyList.h" />
+    <ClInclude Include="QuickSearchDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Resourcebar.h" />
+    <ClInclude Include="Scbarcf.h" />
+    <ClInclude Include="Scbarg.h" />
+    <ClInclude Include="SelectLang.h" />
+    <ClInclude Include="SelectURL.h" />
+    <ClInclude Include="SetAliasDlg.h" />
+    <ClInclude Include="SetFormDataDlg.h" />
+    <ClInclude Include="SetProxy.h" />
+    <ClInclude Include="SetRefIntervalDlg.h" />
+    <ClInclude Include="SetSCDlg.h" />
+    <ClInclude Include="ShellPidl.h" />
+    <ClInclude Include="ShellTree.h" />
+    <ClInclude Include="ShellTreeCtrl.h" />
+    <ClInclude Include="ShellWnd.h" />
+    <ClInclude Include="SimpleSAH.h" />
+    <ClInclude Include="Sizecbar.h" />
+    <ClInclude Include="SortSaveDlg.h" />
+    <ClInclude Include="StatusBarWithProgress.H" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TabDropTarget.h" />
+    <ClInclude Include="TextProgressCtrl.h" />
+    <ClInclude Include="ToolMenu.h" />
+    <ClInclude Include="TxtDropTarget.h" />
+    <ClInclude Include="UrlFilterProp.h" />
+    <ClInclude Include="WebFileOpenDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CollectorTool.bmp" />
+    <Image Include="RES\FavExp.bmp" />
+    <Image Include="RES\LinkList.Bmp" />
+    <Image Include="RES\LinkList.ICO" />
+    <Image Include="RES\mainfrm.ico" />
+    <Image Include="RES\normal.ico" />
+    <Image Include="res\page.ico" />
+    <Image Include="res\proxy.bmp" />
+    <Image Include="res\refresh.bmp" />
+    <Image Include="res\save.ico" />
+    <Image Include="res\secure.ico" />
+    <Image Include="RES\TaskBar.bmp" />
+    <Image Include="res\treelist.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GreenBrowser.reg" />
+    <None Include="GreenBrowser.rgs" />
+    <None Include="res\drag.cur" />
+    <None Include="res\GreenBrowser.rc2" />
+    <None Include="res\GreenBrowserNSHandle.rgs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

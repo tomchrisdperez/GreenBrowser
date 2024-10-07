@@ -1,0 +1,72 @@
+[Proxy]
+proxy1=http://anon.free.anonymizer.com/%S
+speed1=3
+alias1=Anonymizer
+proxy2=http://www.netsol.com/cgi-bin/whois/whois?STRING={%s}&SearchType=do
+speed2=3
+alias2=Whois
+proxy3=http://info.alexa.com/data/details?url=%s
+speed3=3
+alias3=Describe
+CategoryName=Web Proxy
+ProxyByPass=
+ProxyType=1
+Translation=0
+[Proxy1]
+proxy1=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/microsoft/computer_translation.html?wl_lp=EN-DE&wl_fl=0&wl_rurl=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed1=3
+alias1=English >> Germany
+proxy2=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/microsoft/computer_translation.html?wl_lp=EN-FR&wl_fl=0&wl_rurl=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed2=3
+alias2=English >> French
+proxy3=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/microsoft/computer_translation.html?wl_lp=EN-ES&wl_fl=0&wl_rurl=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed3=3
+alias3=English >> Spainish
+proxy4=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/microsoft/computer_translation.html?wl_lp=EN-ZH_CN&wl_fl=0&wl_rurl=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed4=3
+alias4=English >> Chinese Simplified
+proxy5=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/microsoft/computer_translation.html?wl_lp=EN-ZH_TW&wl_fl=0&wl_rurl=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed5=3
+alias5=English >> Chinese Triditional
+proxy6=http://
+speed6=3
+alias6=--
+proxy7=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=ZH_CN-EN&wl_fl=0&wl_r url=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed7=3
+alias7=Chinese-Simple >> English
+proxy8=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=ZH_TW-EN_TW&wl_fl=0&w l_rurl=http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed8=3
+alias8=Chinese-Traditional >> English
+proxy9=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=JA-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed9=3
+alias9=Japanese >> English
+proxy10=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=KO-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed10=3
+alias10=Korean >> English
+proxy11=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=FR-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed11=3
+alias11=French >> English
+proxy12=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=DE-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed12=3
+alias12=German >> English
+proxy13=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=NL-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed13=3
+alias13=Dutch >> English
+proxy14=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=IT-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed14=3
+alias14=Italion >> English
+proxy15=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=RU-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed15=3
+alias15=Russian >> English
+proxy16=http://www.worldlingo.com/wl/mstranslate/UP26384/T1/P2/l/mic rosoft/computer_translation.html?wl_lp=ES-EN&wl_fl=0&wl_rurl =http%3A%2F%2F%s%2F&wl_url=%s&wlg_table=-3
+speed16=3
+alias16=Spanish >> English
+CategoryName=Translation Proxy
+ProxyByPass=
+ProxyType=1
+Translation=1
+[Proxy2]
+CategoryName=Proxy Server
+ProxyByPass=<local>
+ProxyType=0
+Translation=0

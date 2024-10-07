@@ -1,0 +1,12 @@
+[Group]
+name0=GreenBrowser Search
+url0=http://www.gb-search.com/
+state1=0
+name1=Baidu
+url1=http://www.baidu.com/index.php?tn=GreenBrowser
+state2=0
+name2=Google Advanced Search
+url2=http://www.google.com/advanced_search
+state3=0
+name3=Yahoo Advanced Search
+url3=http://search.yahoo.com/web/advanced

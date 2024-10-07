@@ -1,0 +1,41 @@
+##########################################################################
+## How to run collector selected script text
+## 1. Select script text in collector from <script> to </script>. 
+## 2. Click "Run Selected Script Text" button in collector.
+## 3. If you want to run script in all page, press "Ctrl" key when click.
+##########################################################################
+
+==========================================================================
+== Unlock Mouse Left Right Click
+==========================================================================
+<script language="JavaScript">
+function enableCtxt(){ if (event != null) event.cancelBubble=false; return true;}document.onmousedown=enableCtxt;document.oncontextmenu=enableCtxt;document.onmouseup=enableCtxt;document.onselectstart=enableCtxt;var frs=document.frames;if (frs != null){    for (i=0; i < frs.length; i++)    {        frs[i].document.onmousedown=enableCtxt;        frs[i].document.oncontextmenu=enableCtxt;        frs[i].document.onmouseup=enableCtxt;        frs[i].document.onselectstart=enableCtxt;    }}
+</script>
+
+==========================================================================
+== Kill Flash Ad and Flying Ad
+==========================================================================
+<script language="Javascript">
+mdoc=document;for(var i=0;i<mdoc.embeds.length;i++){ var obj=mdoc.embeds[i];obj.style.visibility="hidden";}var objs=document.all;var l=objs.length;var x=0;for (i=0;i<l;i++){var obj=objs[i];try{  if (obj.tagName=="OBJECT" && obj.classid=="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000")  {    obj.style.visibility="hidden";    x=x+1;    continue;  }} catch(e){}try{  if (obj.style.position=="absolute")  {  obj.style.visibility="hidden";  }}catch(e){}}
+</script>
+
+==========================================================================
+== Decrease Image Size to Fit Page Width
+==========================================================================
+<script language="JavaScript">
+var AllImages = document.images;if (AllImages != null){	for (i=0; i < AllImages.length; i++) { if (AllImages[i].width > document.body.clientWidth * 0.96) 			AllImages[i].width = document.body.clientWidth * 0.96;	}}
+</script>
+
+==========================================================================
+== Split Frame Page
+==========================================================================
+<script language="Javascript">
+for(i=0;i<frames.length;i++){window.open(frames[i].location);}eval();
+</script>
+
+==========================================================================
+== Set Page Font Verdana
+==========================================================================
+<script language="JavaScript">
+var tr = window.document.body.createTextRange();if (tr != null){ tr.execCommand("FontName","","Verdana");    tr.execCommand("FontSize","","2");    tr.collapse(false);}
+</script>

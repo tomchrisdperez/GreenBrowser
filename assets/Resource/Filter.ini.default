@@ -1,0 +1,8 @@
+[PopFilter]
+pop1=http://ad*.sina*
+
+[UrlFilter]
+url1=*.ad.*
+url2=*/ad.*
+url3=*.allyes.*
+url4=*.unionsky.*

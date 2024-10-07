@@ -1,0 +1,56 @@
+[SearchEngine]
+C0=1
+N0=GreenBrowser Search
+S0=http://www.gb-search.com/search?w=%u
+I0=.\resource\gb-search.ico
+N1=baidu
+S1=http://www.baidu.com/baidu?tn=GreenBrowser&word=%s
+I1=.\resource\baidu.ico
+N2=163
+S2=http://202.108.36.171:8080/neclickcount?cid=31&sid=167&pid=303&url=http://cha.so.163.com/so.php&q=%s
+N3=yahoo
+S3=http://search.yahoo.com/search?p=%u&ei=UTF-8
+N4=msn
+S4=http://search.msn.com/results.asp?co=20&RS=CHECKED&FORM=SMCB&ba=0&v=1&q=%s
+N5=google
+S5=http://www.google.com/search?q=%u
+I5=.\resource\google.ico
+N6=google(GB2312)
+S6=http://www.google.com/search?q=%s&hl=zh-CN&inlang=zh-CN&ie=GB2312&lr=lang_zh-CN%7Clang_zh-TW
+N7=google(BIG5)
+S7=http://www.google.com.tw/search?q=%s&hl=zh-TW&inlang=zh-TW&ie=BIG5
+N8=google | baidu | yahoo
+S8=http://www.google.com/search?q=%u | http://www.baidu.com/baidu?tn=GreenBrowser&word=%s | http://search.yahoo.com/search?p=%u&ei=UTF-8
+N9=google(I'm Feeling Lucky)
+S9=http://www.google.com/search?q=%u&btnI=I
+N10=google(image)
+S10=http://images.google.com/images?q=%u
+N11=google(news)
+S11=http://news.google.com/news?q=%u
+N12=--
+S12=
+N13=news (news.com)
+S13=http://news.search.com/search?q=%s
+N14=news (abc.com)
+S14=http://search.abc.go.com/abctv/query.html?rf=0&nh=10&qm=0&rq=0&qt=%s&x=4&y=5
+N15=--
+S15=
+N16=soft (download.com)
+S16=http://www.download.com/pc/list/1,339,0-a-0-0-e-1,00.html?tag=st.dl..srch.list&search=%s&queryType=quicksearch
+N17=soft (tucows.com)
+S17=http://www.tucows.com/perl/tucowsSearch?word=%s&key=all&do=search&platform=win95
+N18=--
+S18=
+N19=mp3  (mp3.com)
+S19=http://search.mp3.com/bin/search?query=%s&display=default
+N20=mp3  (sogua.com)
+S20=http://search.sogua.com/search/search.asp?key=%s&fexe=1&fzip=1&frar=1&fmp3=1&frm=1&fwma=1&fasf=1
+N21=--
+S21=
+N22=weather (t7online.com)
+S22=http://www.t7online.com/cgi-bin/suchen?LANG=cn&ORT=%s
+N23=dictionary (reference.com)
+S23=http://dictionary.reference.com/search?q=%s
+N24=shopping
+S24=http://www.dangdang.com/league/leagueref.asp?from=P-1378493&backurl=http://211.100.16.156/dangdang.dll?key=%s
+I24=.\resource\shopping.ico
